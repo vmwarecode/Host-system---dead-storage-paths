@@ -1,0 +1,10 @@
+{"7f6cccbe-701b-410e-9606-acf95e8e095a": {
+   "resourceKinds": [{
+      "resourceKindKey": "HostSystem",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1611837197081,
+   "name": "Number of dead storage paths",
+   "formula": "${this, metric=config|storageDevice|plugStoreTopology|numberofPath}-${this, metric=config|storageDevice|multipathInfo|numberofActivePath}",
+   "description": ""
+}}
